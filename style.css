@@ -1,0 +1,103 @@
+/* Basic body styling to remove margins and hide overflow */
+body { 
+    margin: 0; 
+    overflow: hidden; 
+    background-color: #1a1a1a; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+/* Ensure the canvas is a block element to avoid extra space below it */
+canvas { 
+    display: block; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
+
+/* Styling for the emotion title overlay */
+#emotion-title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #87CEEB; /* Sky Blue - a gentle, clear blue */
+    font-size: 28px; 
+    z-index: 10; 
+    font-weight: bold;
+}
+
+/* Styling for the interactive instructions textbox */
+#interaction-instructions {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 300px; 
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7); /* Consistent dark semi-transparent background */
+    border: 1px solid rgba(179, 229, 252, 0.3); /* Very light blue border, but more transparent */
+    border-radius: 8px; 
+    color: #F8F8FF; /* Light text for readability on dark background */
+    font-size: 14px;
+    line-height: 1.5; 
+    z-index: 10;
+}
+
+#interaction-instructions p {
+    margin: 0 0 8px 0; 
+}
+
+#interaction-instructions p:last-child {
+    margin-bottom: 0; 
+}
+
+/* Styling for the slider container */
+#slider-container {
+    position: absolute;
+    top: 60px; /* Consistent top position */
+    right: 20px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7); /* Consistent dark semi-transparent background */
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: #F8F8FF; /* Light text */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#slider-container label {
+    font-size: 16px;
+    white-space: nowrap; 
+}
+
+#meditationSlider { 
+    width: 150px;
+    -webkit-appearance: none; 
+    appearance: none;
+    height: 8px;
+    background: #B3E5FC; /* Light Blue Pastel Track */
+    outline: none;
+    border-radius: 4px;
+}
+
+#meditationSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #A7C5EB; /* A slightly deeper pastel blue for the thumb */
+    cursor: pointer;
+    box-shadow: 0 0 0 3px rgba(167, 197, 235, 0.3); /* Soft glow matching thumb */
+}
+
+#meditationSlider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #A7C5EB; 
+    cursor: pointer;
+    box-shadow: 0 0 0 3px rgba(167, 197, 235, 0.3);
+}
+
+/* Removed the .back-button styles entirely as the button is gone */
